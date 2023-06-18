@@ -88,7 +88,7 @@ body {
 }
 
 .page-container {
-  width: 940px;
+  width: 1280px;
   margin: 0 auto;
 }
 
@@ -338,7 +338,7 @@ body {
 
 /*Стили для страницы "Каталог"*/
 
-.catalog-search {
+.catalog-image {
   background: #000000 url(../images/Filter-catalogdekor.jpg) no-repeat;
   background-size: 100% auto;
 }
