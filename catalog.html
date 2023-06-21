@@ -10,55 +10,61 @@
       <header class="main-header">
         <nav class="navigation">
           <ul class="navigation-list">
-            <li class="navigation-item">
-              <a class="navigation-logo" href="index.html">
-                <img
-                  class="logo"
-                  src="/images/logo.svg"
-                  width="140"
-                  height="70"
-                  alt="Логотип Седоны"
-                />
-              </a>
-            </li>
-            <li class="navigation-item">
-              <a class="navigation-link" href="index.html">Главная</a>
-            </li>
-            <li class="navigation-item">
-              <a class="navigation-link" href="#">О седоне</a>
-            </li>
-            <li class="navigation-item">
-              <a class="navigation-link" href="#">Гостиницы</a>
-            </li>
+            <div class="navigation-container">
+              <li class="navigation-item">
+                <a class="navigation-logo" href="index.html">
+                  <img
+                    class="logo"
+                    src="/images/logo.svg"
+                    width="140"
+                    height="70"
+                    alt="Логотип Седоны"
+                  />
+                </a>
+              </li>
+              <li class="navigation-item">
+                <a class="navigation-link" href="#">Главная</a>
+              </li>
+              <li class="navigation-item">
+                <a class="navigation-link" href="#">О седоне</a>
+              </li>
+              <li class="navigation-item">
+                <a class="navigation-link" href="catalog.html">Гостиницы</a>
+              </li>
+            </div>
           </ul>
           <ul class="navigation-list" class="navigation-user">
-            <li class="navigation-item">
-              <a class="navigation-link" href="#">
-                <img
-                  class="search-image"
-                  src="/images/search.svg"
-                  width="44"
-                  height="64"
-                  alt="Поиск"
-                />
-                <span class="visually-hidden">Поиск</span>
-              </a>
-            </li>
-            <li class="navigation-item">
-              <a class="navigation-link" href="#">
-                <img
-                  class="search-image"
-                  src="/images/favorite.svg"
-                  width="44"
-                  height="64"
-                  alt="Избранные"
-                />
-                <span class="visually-hidden">Избранные</span>
-              </a>
-            </li>
-            <li class="navigation-item">
-              <a class="navigation-link" href="#">Хочу сюда!</a>
-            </li>
+            <div class="navigation-user-container">
+              <li class="navigation-item">
+                <a class="navigation-link" href="#">
+                  <img
+                    class="search-image"
+                    src="/images/search.svg"
+                    width="44"
+                    height="64"
+                    alt="Поиск"
+                  />
+                  <span class="visually-hidden">Поиск</span>
+                </a>
+              </li>
+              <li class="navigation-item">
+                <a class="navigation-link" href="#">
+                  <img
+                    class="search-image"
+                    src="/images/favorite.svg"
+                    width="44"
+                    height="64"
+                    alt="Избранные"
+                  />
+                  <span class="visually-hidden">Избранные</span>
+                </a>
+              </li>
+              <li class="navigation-item">
+                <a class="navigation-link navigation-button" href="#"
+                  >Хочу сюда!</a
+                >
+              </li>
+            </div>
           </ul>
         </nav>
       </header>
@@ -72,15 +78,16 @@
             </ul>
             <h2 class="visually-hidden">Главная страница</h2>
             <div class="breadcrumbs-block">
-              <ul class="breadcrumbs-list">
+              <ol class="breadcrumbs-list">
                 <li class="breadcrumbs-item">
                   <a href="#" class="breadcrumbs-link"></a>
                 </li>
                 <li class="breadcrumbs-item">
                   <a href="#" class="breadcrumbs-link">Гостиницы</a>
                 </li>
-              </ul>
+              </ol>
             </div>
+            <div class="infrastructure-block">
             <form
               class="infrastructure-form"
               action="https://echo.htmlacademy.ru/"
@@ -89,7 +96,7 @@
               <fieldset class="infrastructure-group">
                 <legend class="infrastructure-title">Инфраструктура</legend>
                 <ul class="Infrastructure-list">
-                  <div class="infrastructure-block">
+
                     <li class="Infrastructure-item">
                       <label class="checkbox-label">
                         <input
@@ -119,9 +126,10 @@
                         />Wi-Fi
                       </label>
                     </li>
-                  </div>
+
                 </ul>
               </fieldset>
+            </div>
               <fieldset class="typeofhouse-group">
                 <legend class="typeofhouse-title">Тип жилья:</legend>
                 <ul class="typeofhouse-list">
@@ -422,21 +430,37 @@
           <h2 class="visually-hidden">Социальные сети</h2>
           <ul class="footer-social-list">
             <li class="footer-social-item">
-              <a class="footer-social-link" href="#"
-                ><span class="footer-social-img"></span
-              ></a>
+              <div class="social-item-conteiner">
+                <a
+                  class="footer-social-link"
+                  href="https://vk.com/htmlacademy"
+                  ><img src="/images/vk.svg" alt="Вконтакте" /><span
+                    class="footer-social-img-vk"
+                  ></span
+                ></a>
+              </div>
               <span class="visually-hidden">Vkontakte</span>
             </li>
             <li class="footer-social-item">
-              <a class="footer-social-link" href="#"
-                ><span class="footer-social-img"></span
-              ></a>
+              <div class="social-item-conteiner">
+                <a class="footer-social-link" href="https://t.me/htmlacademy"
+                  ><img src="/images/tg.svg" alt="Телеграм" /><span
+                    class="footer-social-img-tg"
+                  ></span
+                ></a>
+              </div>
               <span class="visually-hidden">Telegram</span>
             </li>
             <li class="footer-social-item">
-              <a class="footer-social-link" href="#"
-                ><span class="footer-social-img"></span
-              ></a>
+              <div class="social-item-conteiner">
+                <a
+                  class="footer-social-link"
+                  href="https://www.youtube.com/user/htmlacademyru"
+                  ><img src="/images/youtube.svg" alt="Ютуб" /><span
+                    class="footer-social-img-youtube"
+                  ></span
+                ></a>
+              </div>
               <span class="visually-hidden">Youtube</span>
             </li>
           </ul>
@@ -462,5 +486,6 @@
         </section>
       </div>
     </footer>
+  </div>
   </body>
 </html>
