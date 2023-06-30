@@ -49,9 +49,8 @@ main {
 
 /*Логотип на хиро*/
 
-.main-header {
-  margin-bottom: -6;
-  z-index: 1;
+.navigation {
+  position: relative;
 }
 
 /*Скрывает дополнительные заголовки*/
@@ -90,7 +89,6 @@ main {
 .navigation-user {
   display: flex;
   flex-wrap: wrap;
-  margin-left: auto;
   align-content: center;
   justify-content: flex-end;
 }
@@ -119,7 +117,6 @@ main {
   width: 160px;
   height: 36px;
   display: flex;
-  margin: 14px 70px 14px 20px;
   align-items: center;
   justify-content: center;
   border-radius: 4px;
@@ -128,16 +125,19 @@ main {
   background-color: #756157;
 }
 
-.navigation-logo {
-  margin-right: 30px;
-  margin-left: 70px;
-}
-
 .navigation-item {
   padding: 20px 16px 20px 16px;
 }
 
+.hero {
+  background-image: url(../images/main/divider.svg),
+    url(../images/main/welcome.svg);
+  background-position: center bottom, center center;
+  background-size: 100%, 100%;
+}
+
 /*Стили для преимуществ*/
+/*
 .advantages-header-name {
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
