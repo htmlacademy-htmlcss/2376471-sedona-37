@@ -47,6 +47,11 @@ main {
   background-color: #ffffff;
 }
 
+/*Список обнуления  стилей по умолчанию*/
+
+.reset-list {
+}
+
 /*Логотип на хиро*/
 
 .navigation {
@@ -130,10 +135,13 @@ main {
 }
 
 .hero {
+  background-color: #756157;
   background-image: url(../images/main/divider.svg),
-    url(../images/main/welcome.svg);
+    url(../images/main/index-hero.png);
   background-position: center bottom, center center;
   background-size: 100%, 100%;
+  background-repeat: no-repeat;
+  padding: 51px 371px 82px 371px;
 }
 
 /*Стили для преимуществ*/
