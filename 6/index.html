@@ -52,7 +52,6 @@
             height="352px">
         </section>
         <section class="advantages">
-          <h2 class="visually-hidden">Преимущества</h2>
           <div class="advantages-header">
             <h2 class="advantages-header-title">
               Седона — небольшой городок в Аризоне,<br />
@@ -125,7 +124,6 @@
           </ul>
         </section>
         <section class="recommendation">
-          <h2 class="visually-hidden">Рекомендации</h2>
           <h2 class="recommendation-title">
             Приезжайте в Седону отдохнуть<br />
             в комфорте и уюте!
@@ -134,7 +132,7 @@
             Опытный персонал и качественное обслуживание!
           </p>
           <ul class="recommendation-list reset-list">
-            <li class="recommendation-item">
+            <li class="recommendation-item recommendation-item-house">
               <h3 class="recommendation-item-title">Жильё</h3>
               <p class="recommendation-item-description">
                 Рекомендуем пожить<br />
@@ -142,7 +140,7 @@
                 всё как в кино!
               </p>
             </li>
-            <li class="recommendation-item recommendation-center-item">
+            <li class="recommendation-item recommendation-center-item recommendation-item-food">
               <h3 class="recommendation-item-title">Еда</h3>
               <p class="recommendation-item-description">
                 Всегда заказывайте<br />
@@ -150,7 +148,7 @@
                 вы не разочаруетесь!
               </p>
             </li>
-            <li class="recommendation-item">
+            <li class="recommendation-item recommendation-item-suvenir">
               <h3 class="recommendation-item-title">Сувениры</h3>
               <p class="recommendation-item-description">
                 Не только китайского,<br />
@@ -175,8 +173,10 @@
             честное бойскаутское!
           </p>
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-            <label class="subscribe-label" for="get-subscribe" hidden="hidden"></label>
-            <input type="email" name="get-subscribe" id="get-subscribe" placeholder="Ваш e-mail" />
+            <label class="subscribe-label" for="get-subscribe">
+              <input class="subscribe-input" type=" email" name="get-subscribe" id="get-subscribe"
+                placeholder="Ваш e-mail" />
+            </label>
             <button class="subscribe-button" type="submit">ПОДПИСАТЬСЯ</button>
           </form>
         </section>
@@ -184,19 +184,18 @@
       <footer class="main-footer">
         <ul class="footer-social-list reset-list">
           <li class="footer-social-item">
-            <a class="footer-social-link" href="https://vk.com/htmlacademy"><img src="./images/icons/vk.svg"
-                alt="Вконтакте." width="24px" height="14px" /><span class="visually-hidden">Vkontakte</span>
+            <a class="footer-social-link footer-social-link-vk" href="https://vk.com/htmlacademy"><span
+                class="visually-hidden">Vkontakte</span>
             </a>
           </li>
           <li class="footer-social-item">
-            <a class="footer-social-link" href="https://t.me/htmlacademy"><img src="./images/icons/tg.svg"
-                alt="Телеграм." width="18px" height="15px" /><span class="visually-hidden">Telegram</span>
+            <a class="footer-social-link footer-social-link-tg" href="https://t.me/htmlacademy"><span
+                class="visually-hidden">Telegram</span>
             </a>
           </li>
           <li class="footer-social-item">
-            <a class="footer-social-link" href="https://www.youtube.com/user/htmlacademyru"><img
-                src="./images/icons/youtube.svg" alt="Ютуб." width="22px" height="17px" /><span
-                class="visually-hidden">Youtube</span>
+            <a class="footer-social-link footer-social-link-youtuube"
+              href="https://www.youtube.com/user/htmlacademyru"><span class="visually-hidden">Youtube</span>
             </a>
           </li>
         </ul>
@@ -206,6 +205,47 @@
             академии</span>
         </a>
       </footer>
+
+      <div class="modal-container modal-container-close">
+        <div class="modal modal-search">
+          <button class="modal-close-button">
+            <span class="visually-hidden">Закрыть</span>
+          </button>
+          <section class="modal-content">
+            <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+            <form class="search-form" method="post" action="https://echo.htmlacademy.ru/">
+              <p class="date-from-name">Дата заезда:
+                <label for="date-from">
+                  <input class="date-from-form calender" type="text" id="date-from" name="adate-form"
+                    value="27 апреля 2020" placeholder="Укажите дату">
+                  <small class="error">Мы не можем отправить вас в прошлое.</small>
+                </label>
+              </p>
+              <p class="date-to-name">Дата выезда:
+                <label for="date-to">
+                  <input class="date-to-form calender" type="text" id="date-to" name="adate-to" value="1 сентября 2023"
+                    placeholder="Укажите дату">
+                  <small class="success">На эти даты есть свободные номера. Пока есть.</small>
+                </label>
+              </p>
+              <p class="adults-name">Взрослые:
+                <label>
+                  <input>
+                </label>
+              </p>
+              <p class="kids-name">Дети:
+                <label>
+                  <input>
+                </label>
+              </p>
+              <a class="search-button-for-modal reset-link" href="#">
+                <span class="search-button-name">Найти</span>
+              </a>
+            </form>
+          </section>
+        </div>
+      </div>
+
     </div>
   </body>
 

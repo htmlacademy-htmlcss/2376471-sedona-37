@@ -98,18 +98,16 @@
               </ul>
             </fieldset>
             <ul class="cost-list reset-list">
-              <div class="cost-block">
-                <li class="cost-item">
-                  <h2 class="cost-title">Стоимость, ₽:</h2>
-                </li>
-                <li class="cost-item">
-                  <input type="number" placeholder="0 от" />
-                </li>
-                <li class="cost-item">
-                  <input type="number" placeholder="9000 до" />
-                </li>
-                <li class="cost-item"></li>
-              </div>
+              <li class="cost-item">
+                <h2 class="cost-title">Стоимость, ₽:</h2>
+              </li>
+              <li class="cost-item">
+                <input type="number" placeholder="0 от" />
+              </li>
+              <li class="cost-item">
+                <input type="number" placeholder="9000 до" />
+              </li>
+              <li class="cost-item"></li>
             </ul>
             <div class="form-button">
               <button type="submit" class="submit-button">Применить</button>
@@ -127,20 +125,17 @@
               <option value="popular">Сначала популярные</option>
             </select>
             <ul class="catalog-header-view-list reset-list">
-              <li class="catalog-header-item">
-                <a href="#"><img class="catalog-header-link" src="./images/icons/view-mode-card.svg" width="48"
-                    height="48" alt="Плитка." />
-                </a>
+              <li class="catalog-header-view-item">
+                <a class="catalog-header-view-link reset-link view-mode-card view-mode-current" href="#"><span
+                    class="visually-hidden">Плитка</span></a>
               </li>
-              <li class="catalog-header-item">
-                <a href="#"><img class="catalog-header-link" src="./images/icons/view-mode-slider.svg" width="48"
-                    height="48" alt="Слайдер." />
-                </a>
+              <li class="catalog-header-view-item">
+                <a class="catalog-header-view-link reset-link view-mode-slider" href="#"><span
+                    class="visually-hidden">Слайдер</span></a>
               </li>
-              <li class="catalog-header-item">
-                <a href="#"><img class="catalog-header-link" src="./images/icons/view-mode-list.svg" width="48"
-                    height="48" alt="Список." />
-                </a>
+              <li class="catalog-header-view-item">
+                <a class="catalog-header-view-link reset-link view-mode-list" href="#"><span
+                    class="visually-hidden">Список</span></a>
               </li>
             </ul>
           </header>
@@ -158,8 +153,7 @@
               <button class="goodscard-item-button" type="button">
                 В ИЗБРАННОЕ
               </button>
-              <span class="goodscard-stars"><img src="./images/catalog/stars.svg" alt="stars" width="140px"
-                  height="37px"></span>
+              <span class="goodscard-stars goodscard-stars-amara"></span>
               <span class="rating">РЕЙТИНГ: 8,5</span>
             </article>
             <article class="goodscard">
@@ -175,8 +169,7 @@
               <button class="goodscard-item-button" type="button">
                 В ИЗБРАННОЕ
               </button>
-              <span class="goodscard-stars"><img src="./images/catalog/stars.svg" alt="stars" width="140px"
-                  height="37px"></span>
+              <span class="goodscard-stars goodscard-stars-villas"></span>
               <span class="rating">РЕЙТИНГ: 9,2</span>
             </article>
             <article class="goodscard">
@@ -192,8 +185,7 @@
               <button class="goodscard-item-button" type="button">
                 В ИЗБРАННОЕ
               </button>
-              <span class="goodscard-stars"><img src="./images/catalog/stars.svg" alt="stars" width="140px"
-                  height="37px"></span>
+              <span class="goodscard-stars goodscard-stars-desert"></span>
               <span class="rating">РЕЙТИНГ: 6,9</span>
             </article>
             <article class="goodscard">
@@ -209,14 +201,13 @@
               <button class="goodscard-item-button" type="button">
                 В ИЗБРАННОЕ
               </button>
-              <span class="goodscard-stars"><img src="./images/catalog/stars.svg" alt="stars" width="140px"
-                  height="37px"></span>
+              <span class="goodscard-stars goodscard-stars-green"></span>
               <span class="rating">РЕЙТИНГ: 5,0</span>
             </article>
           </div>
           <ul class="pagination-list reset-list">
             <li class="pagination-item">
-              <a href="#" class="pagination-link">1</a>
+              <a href="#" class="pagination-link pagination-link-current">1</a>
             </li>
             <li class="pagination-item">
               <a href="#" class="pagination-link">2</a>
@@ -228,7 +219,7 @@
               <a href="#" class="pagination-link">4</a>
             </li>
             <li class="pagination-item">
-              <a href="#">...</a>
+              <a class="reset-link" href="#">...</a>
             </li>
             <li class="pagination-item">
               <a href="#" class="pagination-link">10</a>
@@ -242,8 +233,9 @@
             честное бойскаутское!
           </p>
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-            <label class="subscribe-label" for="get-subscribe" hidden="hidden">
-              <input type="email" name="get-subscribe" id="get-subscribe" placeholder="Ваш e-mail" />
+            <label class="subscribe-label" for="get-subscribe">
+              <input class="subscribe-input" type="email" name="get-subscribe" id="get-subscribe"
+                placeholder="Ваш e-mail" />
             </label>
             <button class="subscribe-button" type="submit">ПОДПИСАТЬСЯ</button>
           </form>
@@ -252,19 +244,18 @@
       <footer class="main-footer">
         <ul class="footer-social-list reset-list">
           <li class="footer-social-item">
-            <a class="footer-social-link" href="https://vk.com/htmlacademy"><img src="./images/icons/vk.svg"
-                alt="Вконтакте." width="24px" height="14px" /><span class="visually-hidden">Vkontakte</span>
+            <a class="footer-social-link footer-social-link-vk" href="https://vk.com/htmlacademy"><span
+                class="visually-hidden">Vkontakte</span>
             </a>
           </li>
           <li class="footer-social-item">
-            <a class="footer-social-link" href="https://t.me/htmlacademy"><img src="./images/icons/tg.svg"
-                alt="Телеграм." width="18px" height="15px" /><span class="visually-hidden">Telegram</span>
+            <a class="footer-social-link footer-social-link-tg" href="https://t.me/htmlacademy"><span
+                class="visually-hidden">Telegram</span>
             </a>
           </li>
           <li class="footer-social-item">
-            <a class="footer-social-link" href="https://www.youtube.com/user/htmlacademyru"><img
-                src="./images/icons/youtube.svg" alt="Ютуб." width="22px" height="17px" /><span
-                class="visually-hidden">Youtube</span>
+            <a class="footer-social-link footer-social-link-youtuube"
+              href="https://www.youtube.com/user/htmlacademyru"><span class="visually-hidden">Youtube</span>
             </a>
           </li>
         </ul>
