@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 - Студент: [Сергей Абрамян](https://up.htmlacademy.ru/htmlcss/37/user/2376471).
-- Наставник: [Артем Именин](https://htmlacademy.ru/profile/aimenin).
+- Наставник: [Антон Варнавский](https://htmlacademy.ru/profile/id223468).
 
 ---
 
