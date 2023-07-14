@@ -21,7 +21,7 @@
             <li class="navigation-item">
               <a class="navigation-link reset-link" href="#">О седоне</a>
             </li>
-            <li class="navigation-item">
+            <li class="navigation-item navigation-item-current">
               <a class="navigation-link reset-link" href="catalog.html">Гостиницы</a>
             </li>
           </ul>
@@ -49,10 +49,12 @@
           <h1 class="catalog-search-title">Гостиницы Седоны</h1>
           <ol class="breadcrumbs-list reset-list">
             <li class="breadcrumbs-item">
-              <a href="#" class="breadcrumbs-link reset-link"><span class="visually-hidden">Главная страница</span></a>
+              <a href="#" class="breadcrumbs-link reset-link">
+                <span class="visually-hidden">Главная страница</span>
+              </a>
             </li>
             <li class="breadcrumbs-item">
-              <a href="#" class="breadcrumbs-link reset-link">Гостиницы</a>
+              <a href="#" class="breadcrumbs-link breadcrumbs-index reset-link">Гостиницы</a>
             </li>
           </ol>
           <form class="filter" action="https://echo.htmlacademy.ru/" method="get">
@@ -96,18 +98,33 @@
                 </li>
               </ul>
             </fieldset>
-            <ul class="cost-list reset-list">
-              <li class="cost-item">
-                <h2 class="cost-title">Стоимость, ₽:</h2>
-              </li>
-              <li class="cost-item">
-                <input type="number" placeholder="0 от" />
-              </li>
-              <li class="cost-item">
-                <input type="number" placeholder="9000 до" />
-              </li>
-              <li class="cost-item"></li>
-            </ul>
+
+            <fieldset class="catalog-filter-group catalog-filter-price">
+              <legend class="catalog-filter-title">Стоимость, ₽:</legend>
+              <div class="price-group">
+                <label for="from" class="price-group-label">
+                  <input class="price-group-range price-from" type="number" name="price-from" id="from" value="0">
+                  <span class="price-group-text">от</span>
+                </label>
+                <label for="to" class="price-group-label">
+                  <input class="price-group-range price-to" type="number" name="price-to" id="to" value="9000">
+                  <span class="price-group-text">до</span>
+                </label>
+              </div>
+              <div class="range">
+                <div class="range-scale">
+                  <div class="range-bar" style="left:0; width: 226px">
+                    <button class="range-toggle toggle-min" type="button">
+                      <span class="visually-hidden">Изменить минимальную цену.</span>
+                    </button>
+                    <button class="range-toggle toggle-max" type="button">
+                      <span class="visually-hidden">Изменить максимальную цену.</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+
             <div class="form-button">
               <button type="submit" class="submit-button">Применить</button>
               <button type="reset" class="reset-button">Сбросить</button>
@@ -253,14 +270,13 @@
             </a>
           </li>
           <li class="footer-social-item">
-            <a class="footer-social-link footer-social-link-youtuube"
+            <a class="footer-social-link footer-social-link-youtube"
               href="https://www.youtube.com/user/htmlacademyru"><span class="visually-hidden">Youtube</span>
             </a>
           </li>
         </ul>
         <a href="tel:88128121212" class="contacts-phone reset-link">+7 (812) 812-12-12</a>
-        <a class="htmlacademy-link" href="#"><img class="htmlacademy-logo" src="./images/icons/htmlacademy.svg"
-            width="115" height="33" alt="Логотип htmlacademy." /><span class="visually-hidden">Логотип
+        <a class="htmlacademy-link" href="#"><span class="visually-hidden">Логотип
             академии</span>
         </a>
       </footer>
