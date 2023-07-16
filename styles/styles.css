@@ -232,6 +232,7 @@ main {
   padding-right: 113px;
   padding-left: 113px;
   position: relative;
+  text-transform: uppercase;
 }
 
 .advantages-wide-title::after {
@@ -277,6 +278,7 @@ main {
   padding-right: 113px;
   padding-left: 113px;
   position: relative;
+  text-transform: uppercase;
 }
 
 .advantages-title::after {
@@ -284,7 +286,7 @@ main {
   position: absolute;
   width: 60px;
   bottom: -35px;
-  left: 135px;
+  left: 140px;
   right: 85px;
   height: 2px;
   background-color: rgba(0, 0, 0, 0.3);
@@ -379,6 +381,7 @@ main {
   padding-right: 113px;
   padding-left: 113px;
   margin-bottom: -35px;
+  text-transform: uppercase;
 }
 
 .recommendation-item-description {
@@ -540,7 +543,7 @@ main {
 
 .subscribe-button {
   font-family: "PT Sans", sans-serif;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 20px;
   line-height: 36px;
   color: #ffffff;
@@ -568,6 +571,14 @@ main {
 
 .subscribe-button:disabled {
   background-color: rgba(229, 229, 229, 1);
+}
+
+.subscribe-input {
+  font-family: PT Sans;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 1);
 }
 
 /*Footer*/
@@ -704,7 +715,8 @@ main {
   line-height: 78px;
   color: #ffffff;
   margin: 0;
-  margin-bottom: 8px;
+  padding-top: 35px;
+  margin-right: 550px;
 }
 
 .breadcrumbs-list {
@@ -718,17 +730,7 @@ main {
 .breadcrumbs-item {
   position: relative;
   margin-right: 28px;
-}
-
-.breadcrumbs-item::before {
-  position: absolute;
-  content: "";
-  right: -20px;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 7px;
-  height: 10px;
-  background: url("../images/icons/vector.svg") no-repeat center center;
+  padding: 0;
 }
 
 .breadcrumbs-item:last-child::before {
@@ -745,6 +747,18 @@ main {
   width: 12px;
   height: 12px;
   background: url("../images/icons/home.svg") no-repeat center center;
+  margin-left: 80px;
+}
+
+.breadcrumbs-item::before {
+  position: absolute;
+  content: "";
+  right: -20px;
+  top: 50%;
+  transform: translateY(-290%);
+  width: 7px;
+  height: 10px;
+  background: url("../images/icons/vector.svg") no-repeat center center;
 }
 
 .breadcrumbs-link {
@@ -754,7 +768,8 @@ main {
   line-height: 21px;
   color: #ffffff;
   padding-top: 8px;
-  padding-left: 111px;
+  padding: 0;
+  margin-bottom: 40px;
 }
 
 .filter {
@@ -768,6 +783,8 @@ main {
   color: #ffffff;
   margin: 0;
   padding: 0;
+  margin-left: 70px;
+  margin-right: 70px;
 }
 
 .filter-title {
@@ -787,6 +804,16 @@ main {
   line-height: 23px;
   color: #ffffff;
   margin-bottom: 16px;
+}
+
+.infrastructure-item:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.checkbox-label {
+  position: relative;
+  display: block;
+  padding-left: 36px;
 }
 
 .typeofhouse-item {
@@ -810,6 +837,8 @@ main {
   flex-direction: column;
   justify-content: space-around;
   justify-self: self-end;
+  margin-right: 70px;
+  margin-left: 140px;
 }
 
 .catalog-filter-title {
@@ -819,6 +848,7 @@ main {
   line-height: 24px;
   text-transform: capitalize;
   color: #ffffff;
+  padding-right: 170px;
 }
 
 .price-group {
@@ -837,17 +867,20 @@ main {
 }
 
 .price-group-range {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
   width: 100%;
   height: 48px;
-  padding: 12px 20px;
+  padding: 6px 20px;
   padding-right: 40px;
-  font: inherit;
-  font-weight: 700;
   border: none;
   background-color: #f2f2f2;
 }
 
-.price-form {
+.price-from {
   border-radius: 4px 0 0 4px;
 }
 
@@ -856,6 +889,11 @@ main {
 }
 
 .price-group-text {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 1);
   position: absolute;
   right: 20px;
 }
@@ -909,6 +947,7 @@ input[type="number"] {
   justify-content: flex-end;
   justify-self: end;
   width: 100%;
+  padding-right: 70px;
 }
 
 .submit-button {
@@ -955,6 +994,7 @@ input[type="number"] {
   width: 191px;
   height: 36px;
   cursor: pointer;
+  margin-bottom: 10px;
 }
 
 .reset-button:focus {
@@ -1002,7 +1042,7 @@ input[type="number"] {
   color: #333333;
   border-radius: 4px;
   border: 2px solid #e5e5e5;
-  padding: 14px 20px;
+  padding: 10px 20px;
   margin-top: 20px;
   width: 292px;
   height: 49px;
@@ -1134,6 +1174,7 @@ input[type="number"] {
   font-size: 18px;
   line-height: 21px;
   color: #333333;
+  margin-top: 18px;
 }
 
 .goodscard-link-more {
