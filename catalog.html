@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/styles.css" />
-    <link rel="icon" href="favicon-32x32.png">
+    <link rel="icon" href="favicon-32x32.ico">
   </head>
 
   <body>
@@ -20,27 +20,25 @@
               <a class="navigation-link reset-link" href="index.html">Главная</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link reset-link" href="#">О седоне</a>
+              <a class="navigation-link reset-link" href="#">О Седоне</a>
             </li>
             <li class="navigation-item navigation-item-current">
-              <a class="navigation-link reset-link" href="catalog.html">Гостиницы</a>
+              <a class="navigation-link nav-link reset-link" href="catalog.html">Гостиницы</a>
             </li>
           </ul>
           <ul class="navigation-list navigation-user reset-list">
             <li class="navigation-user-item">
-              <button class="navigation-search-button">
-                <img class="search-image" src="./images/icons/search.svg" width="44" height="64" alt="Поиск." />
+              <button type="submit" class="navigation-search-button">
                 <span class="visually-hidden">Поиск</span>
               </button>
             </li>
             <li class="navigation-user-item">
-              <a class="navigation-link reset-link" href="#">
-                <img class="search-image" src="./images/icons/favorite.svg" width="44" height="64" alt="Избранные." />
+              <a class="navigation-link navigation-favorite-button reset-link" href="#">
                 <span class="visually-hidden">Избранные</span>
               </a>
             </li>
             <li class="navigation-item">
-              <button class="navigation-button">Хочу сюда!</button>
+              <button type="submit" class="navigation-button">Хочу сюда!</button>
             </li>
           </ul>
         </nav>
@@ -254,10 +252,10 @@
               <a href="#" class="pagination-link">4</a>
             </li>
             <li class="pagination-item">
-              <a class="reset-link" href="#">...</a>
+              <a class="reset-link pagi-dot" href="#">...</a>
             </li>
             <li class="pagination-item">
-              <a href="#" class="pagination-link">10</a>
+              <a href="#" class="pagination-link pagi-link">10</a>
             </li>
           </ul>
         </section>

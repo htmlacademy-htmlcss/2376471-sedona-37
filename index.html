@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/styles.css" />
-    <link rel="icon" href="favicon-32x32.png">
+    <link rel="icon" href="favicon-32x32.ico">
   </head>
 
   <body>
@@ -20,27 +20,25 @@
               <a class="navigation-link reset-link" href="index.html">Главная</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link reset-link" href="#">О седоне</a>
+              <a class="navigation-link reset-link" href="#">О Седоне</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link reset-link" href="catalog.html">Гостиницы</a>
+              <a class="navigation-link nav-link reset-link" href="catalog.html">Гостиницы</a>
             </li>
           </ul>
           <ul class="navigation-list navigation-user reset-list">
             <li class="navigation-user-item">
-              <button class="navigation-search-button">
-                <img class="search-image" src="./images/icons/search.svg" width="44" height="64" alt="Поиск." />
+              <button type="submit" class="navigation-search-button">
                 <span class="visually-hidden">Поиск</span>
               </button>
             </li>
             <li class="navigation-user-item">
-              <a class="navigation-link reset-link" href="#">
-                <img class="search-image" src="./images/icons/favorite.svg" width="44" height="64" alt="Избранные." />
+              <a class="navigation-link navigation-favorite-button reset-link" href="#">
                 <span class="visually-hidden">Избранные</span>
               </a>
             </li>
             <li class="navigation-item">
-              <button class="navigation-button">Хочу сюда!</button>
+              <button type="submit" class="navigation-button">Хочу сюда!</button>
             </li>
           </ul>
         </nav>
@@ -49,7 +47,7 @@
         <section class="hero">
           <h1 class="visually-hidden">Седона</h1>
           <img class="welcome-img" src="./images/main/welcome.svg" alt="Добро пожаловать в Седону." width="458px"
-            height="352px">
+            height="359px">
         </section>
         <section class="advantages">
           <div class="advantages-header">
@@ -164,7 +162,7 @@
             Укажите предполагаемые даты поездки,<br />
             и мы покажем вам лучшие предложения гостиниц в Седоне
           </p>
-          <button class="search-button">ПОИСК ГОСТИНИЦЫ В СЕДОНА</button>
+          <button type="submit" class="search-button">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
         </section>
         <section class="subscribe index-subscribe">
           <h2 class="subscribe-title index-subscribe-title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h2>
@@ -207,7 +205,7 @@
 
       <div class="modal-container modal-container-close">
         <div class="modal modal-search">
-          <button class="modal-close-button">
+          <button type="button" class="modal-close-button">
             <span class="visually-hidden">Закрыть</span>
           </button>
           <section class="modal-content">
