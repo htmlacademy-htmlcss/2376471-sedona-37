@@ -93,15 +93,13 @@ main {
 .navigation-list {
   display: flex;
   flex-wrap: wrap;
-}
-
-.nav-link {
-  margin-right: 79px;
+  margin-right: 77px;
 }
 
 .navigation-user {
   display: flex;
   flex-wrap: wrap;
+  margin-right: 39px;
 }
 
 .navigation-item {
@@ -118,7 +116,7 @@ main {
   position: absolute;
   bottom: 14px;
   left: 15px;
-  right: 9px;
+  right: 20px;
   height: 2px;
   background-color: rgba(117, 98, 87, 1);
 }
@@ -152,7 +150,7 @@ main {
   line-height: 20px;
   width: 160px;
   height: 36px;
-  margin: -13px 54px 9px 0;
+  margin: -13px 17px 9px 0;
   padding: 10px;
   border-radius: 4px;
   text-transform: uppercase;
@@ -191,9 +189,13 @@ main {
   background-image: url("../images/main/divider.svg"),
     url("../images/main/index-hero.png");
   background-position: center bottom, center center;
-  background-size: 100%, 100%;
+  background-size: 1200px 57px, 100% 100%;
   background-repeat: no-repeat;
   padding: 34px 371px 82px 371px;
+}
+
+.welcome-img {
+  padding-top: 13px;
 }
 
 /*Стили для преимуществ*/
@@ -209,7 +211,7 @@ main {
   line-height: 36px;
   text-transform: uppercase;
   color: #000000;
-  margin-top: 69px;
+  margin-top: 58px;
 }
 
 .advantages-header-description {
@@ -343,7 +345,7 @@ main {
   line-height: 36px;
   text-transform: uppercase;
   color: #000000;
-  padding-top: 40px;
+  padding-top: 36px;
 }
 
 .recommendation-description {
@@ -817,6 +819,15 @@ main {
   color: #ffffff;
   margin-bottom: 32px;
   text-transform: capitalize;
+  padding-right: 112px;
+}
+
+.infrastructure-list {
+  text-align: left;
+}
+
+.typeofhouse-list {
+  text-align: left;
 }
 
 .infrastructure-item {
@@ -920,7 +931,7 @@ main {
   line-height: 24px;
   text-transform: capitalize;
   color: #ffffff;
-  padding-right: 170px;
+  text-align: left;
 }
 
 .price-group {
@@ -1036,7 +1047,7 @@ input[type="number"] {
   height: 36px;
   border: none;
   cursor: pointer;
-  margin-bottom: 30px;
+  margin-bottom: 34px;
 }
 
 .submit-button:focus {
@@ -1067,7 +1078,8 @@ input[type="number"] {
   width: 191px;
   height: 36px;
   cursor: pointer;
-  margin-bottom: 10px;
+  margin-bottom: 13px;
+  padding-right: 25px;
 }
 
 .reset-button:focus {
@@ -1091,10 +1103,7 @@ input[type="number"] {
 
 .catalog-header {
   display: flex;
-  margin-top: 50px;
-  margin-left: 70px;
-  margin-right: 70px;
-  margin-bottom: -24px;
+  justify-content: space-between;
 }
 
 .catalog-search-result {
@@ -1104,7 +1113,9 @@ input[type="number"] {
   line-height: 36px;
   color: #000000;
   text-transform: uppercase;
-  margin-top: 7px;
+  margin-top: 56px;
+  margin-left: 69px;
+  width: 340px;
 }
 
 .catalog-select {
@@ -1115,11 +1126,12 @@ input[type="number"] {
   color: #333333;
   border-radius: 4px;
   border: 2px solid #e5e5e5;
-  padding: 10px 14px;
-  margin-left: 201px;
-  margin-right: 60px;
+  padding: 10px 18px;
+  margin-left: 134px;
+  margin-top: 51px;
   width: 292px;
   height: 49px;
+  appearance: none;
 }
 
 .catalog-select:focus {
@@ -1136,6 +1148,8 @@ input[type="number"] {
 
 .catalog-header-view-list {
   display: flex;
+  margin-top: 50px;
+  margin-right: 64px;
 }
 
 .catalog-header-view-item:not(:last-child) {
@@ -1144,8 +1158,8 @@ input[type="number"] {
 
 .catalog-header-view-link {
   display: inline-block;
-  width: 48px;
-  height: 48px;
+  width: 47px;
+  height: 47px;
   text-decoration: none;
   border: 2px solid #e5e5e5;
   border-radius: 4px;
@@ -1210,7 +1224,8 @@ input[type="number"] {
   display: grid;
   grid-template-columns: repeat(3, 340px);
   justify-content: space-around;
-  padding: 40px 70px;
+  padding: 20px 70px;
+  margin: 0;
   gap: 20px;
 }
 
@@ -1220,7 +1235,8 @@ input[type="number"] {
   gap: 16px 20px;
   border: 1px solid #e6e6e6;
   border-radius: 4px;
-  padding: 20px;
+  padding: 0;
+  margin: 0;
 }
 
 .goodscard-title {
@@ -1230,8 +1246,9 @@ input[type="number"] {
   font-size: 24px;
   line-height: 28px;
   color: #000000;
-  margin-right: 89px;
-  margin-top: -7px;
+  padding: 0;
+  margin: 0;
+  text-align: left;
 }
 
 .goodscard-type {
@@ -1241,8 +1258,9 @@ input[type="number"] {
   font-size: 18px;
   line-height: 21px;
   color: #333333;
-  margin-top: -26px;
-  margin-right: 65px;
+  padding: 0;
+  margin: 0;
+  text-align: left;
 }
 
 .goodscard-price {
@@ -1252,8 +1270,9 @@ input[type="number"] {
   font-size: 18px;
   line-height: 21px;
   color: #333333;
-  margin-top: -26px;
-  margin-right: -63px;
+  padding: 0;
+  margin: 0;
+  text-align: right;
 }
 
 .goodscard-link-more {
@@ -1264,14 +1283,15 @@ input[type="number"] {
   line-height: 20px;
   width: 88px;
   height: 20px;
-  padding: 8px 30px 8px 20px;
   background-color: #756157;
   color: #ffffff;
   border-radius: 4px;
   text-transform: uppercase;
   border: none;
   cursor: pointer;
-  margin-top: -23px;
+  padding: 8px 20px;
+  margin: 0;
+  text-align: left;
 }
 
 .goodscard-link-more:focus {
@@ -1304,7 +1324,9 @@ input[type="number"] {
   text-transform: uppercase;
   border: none;
   cursor: pointer;
-  margin-top: -24px;
+  text-align: center;
+  padding: 0;
+  margin: 0;
 }
 
 .goodscard-item-button:focus {
@@ -1325,6 +1347,7 @@ input[type="number"] {
 
 .goodscard-link {
   grid-column: 1 / -1;
+  padding: 18px;
 }
 
 .rating {
@@ -1336,18 +1359,22 @@ input[type="number"] {
   color: #333333;
   width: 140px;
   height: 37px;
-  padding-top: 15px;
-  margin-bottom: 15px;
+  padding: 0;
+  padding-top: 16px;
+  margin: 0;
+  text-align: center;
 }
 
 .goodscard-stars {
   grid-column-start: 1;
   grid-row-start: 5;
   align-self: center;
-  margin-top: -35px;
+  padding: 0;
+  margin: 0;
   height: 17px;
   background-image: url("../images/catalog/stars.svg");
   background-position: left center;
+  text-align: left;
 }
 
 .goodscard-stars-amara {
@@ -1470,8 +1497,8 @@ input[type="number"] {
   padding: 0;
   top: 0;
   right: 0;
-  margin-top: 64px;
-  margin-right: 52px;
+  margin-top: 77px;
+  margin-right: 60px;
   width: 52px;
   height: 52px;
   background-color: rgba(242, 242, 242, 1);
@@ -1498,15 +1525,35 @@ input[type="number"] {
 }
 
 .modal-title {
-  margin: 0;
-  margin-top: 40px;
+  margin-left: 38px;
+  margin-top: 35px;
   margin-bottom: 64px;
   font-family: "PT Sans", sans-serif;
-  font-size: 30px;
+  font-size: 33px;
   line-height: 36px;
   font-weight: 700;
   color: rgba(0, 0, 0, 1);
   text-transform: uppercase;
+}
+
+.date-from {
+  font-family: "PT Sans", sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 1);
+  margin-left: 38px;
+  text-transform: capitalize;
+}
+
+.date-to {
+  font-family: "PT Sans", sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 1);
+  margin-left: 38px;
+  text-transform: capitalize;
 }
 
 .date-from-name {
@@ -1576,11 +1623,10 @@ input[type="number"] {
   display: block;
   color: rgba(255, 87, 87, 1);
   font-family: "PT Sans", sans-serif;
-  font-size: 16px;
+  font-size: 17px;
   font-weight: 400;
   line-height: 21px;
-  padding-top: 4px;
-  padding-left: 156px;
+  padding-left: 213px;
 }
 
 .success {
@@ -1604,6 +1650,7 @@ input[type="number"] {
   border-radius: 4px;
   background-color: #f2f2f2;
   text-decoration: none;
+  margin-left: 39px;
 }
 
 .date-from-form:focus {
@@ -1743,8 +1790,6 @@ input[type="number"] {
   border: none;
   background-color: #f2f2f2;
   cursor: pointer;
-  fill-opacity: 0.3;
-  transition: all 0.2s ease-in-out;
 }
 
 .modal-form-btn:focus {
@@ -1782,10 +1827,14 @@ input[type="number"] {
 
 .button-plus {
   border-radius: 0 4px 4px 0;
+  background-image: url(../images/icons/plus.svg);
+  background-repeat: no-repeat;
+  background-size: 14px 2px;
 }
 
 .button-minus {
   border-radius: 4px 0 0 4px;
+  background-image: url(../images/icons/minus.svg) no-repeat;
 }
 
 .modal-form-search {
@@ -1878,6 +1927,6 @@ input[type="number"] {
   display: block;
 }
 
-.modal-container-close {
+/*.modal-container-close {
   display: none;
-}
+}*/
