@@ -133,12 +133,36 @@ main {
   height: 64px;
 }
 
+.navigation-search-button:focus {
+  opacity: 30%;
+}
+
+.navigation-search-button:hover {
+  opacity: 30%;
+}
+
+.navigation-search-active::focus {
+  opacity: 30%;
+}
+
 .navigation-favorite-button {
   background-image: url("../images/icons/favorite.svg");
   display: block;
   width: 44px;
   height: 64px;
   margin-right: 4px;
+}
+
+.navigation-favorite-button:focus {
+  opacity: 30%;
+}
+
+.navigation-favorite-button:hover {
+  opacity: 30%;
+}
+
+.navigation-favorite-active::focus {
+  opacity: 30%;
 }
 
 /*Кнопка "Хочу сюда" в шапке*/
@@ -191,7 +215,7 @@ main {
   background-position: center bottom, center center;
   background-size: 1200px 57px, 100% 100%;
   background-repeat: no-repeat;
-  padding: 34px 371px 82px 371px;
+  padding: 48px 371px 71px 371px;
 }
 
 .welcome-img {
@@ -722,6 +746,8 @@ main {
 .catalog-search {
   background-color: #756157;
   background-image: url("../images/catalog/filter.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 1200px;
   height: 412px;
 }
