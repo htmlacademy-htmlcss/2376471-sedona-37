@@ -86,6 +86,18 @@ main {
   margin-right: 30px;
 }
 
+.navigation-logo:focus {
+  opacity: 20%;
+}
+
+.navigation-logo:hover {
+  opacity: 20%;
+}
+
+.navigation-logo:active {
+  opacity: 20%;
+}
+
 .navigation {
   display: flex;
   flex-wrap: wrap;
@@ -419,16 +431,16 @@ main {
   line-height: 36px;
   text-transform: uppercase;
   color: #000000;
-  padding-top: 36px;
+  padding-top: 40px;
 }
 
 .recommendation-description {
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 22px;
-  line-height: 26px;
+  line-height: 13px;
   color: #333333;
-  padding-bottom: 40px;
+  padding-bottom: 49px;
 }
 
 .recommendation-list {
@@ -446,6 +458,8 @@ main {
   min-height: 385px;
   background-color: #83b3d31f;
   position: relative;
+  padding: 175px 75px 38px;
+  box-sizing: border-box;
 }
 
 .recommendation-center-item {
@@ -455,7 +469,7 @@ main {
   justify-content: center;
   flex-direction: column;
   width: 400px;
-  height: 385px;
+  min-height: 385px;
   background-color: #ffffff;
 }
 
@@ -466,9 +480,6 @@ main {
   line-height: 28px;
   color: #000000;
   margin: 0;
-  padding-top: 132px;
-  padding-right: 113px;
-  padding-left: 113px;
   text-transform: uppercase;
 }
 
@@ -489,7 +500,7 @@ main {
   width: 75px;
   height: 72px;
   background: url("../images/icons/house.svg") no-repeat center center;
-  top: 21%;
+  top: 83px;
 }
 
 .recommendation-item-food::before {
@@ -498,7 +509,7 @@ main {
   width: 75px;
   height: 72px;
   background: url("../images/icons/food.svg") no-repeat center center;
-  top: 21%;
+  top: 83px;
 }
 
 .recommendation-item-suvenir::before {
@@ -507,7 +518,7 @@ main {
   width: 75px;
   height: 72px;
   background: url("../images/icons/suvenir.svg") no-repeat center center;
-  top: 21%;
+  top: 83px;
 }
 
 /*Стили для "Заинтересовались?"*/
@@ -685,6 +696,7 @@ main {
   display: flex;
   flex-wrap: wrap;
   width: 144px;
+  margin-top: 10px;
 }
 
 .footer-social-link {
@@ -767,6 +779,10 @@ main {
   color: rgba(117, 97, 87, 0.3);
 }
 
+.htmlacademy-link {
+  margin-top: 10px;
+}
+
 .htmlacademy-link::before {
   content: "";
   display: block;
@@ -826,6 +842,18 @@ main {
   padding: 0;
   margin-top: 10px;
   margin-left: -9px;
+}
+
+.breadcrumbs-item:focus {
+  opacity: 1%;
+}
+
+.breadcrumbs-item:hover {
+  opacity: 1%;
+}
+
+.breadcrumbs-item:active {
+  opacity: 2%;
 }
 
 .breadcrumbs-item:last-child::before {
@@ -932,6 +960,18 @@ main {
   height: 20px;
   border-radius: 4px;
   background-color: #ffffff;
+}
+
+.control-label:focus {
+  color: #68a2ca;
+}
+
+.control-label:hover {
+  color: #68a2ca;
+}
+
+.control-label:active {
+  color: #68a2ca;
 }
 
 .control-input[type="checkbox"]:checked + .control-mark::before {
@@ -1231,8 +1271,10 @@ input[type="number"] {
 
 .catalog-header-view-list {
   display: flex;
+  flex-wrap: wrap;
+  width: 180px;
   margin-top: 50px;
-  margin-right: 64px;
+  margin-right: 52px;
 }
 
 .catalog-header-view-item:not(:last-child) {
@@ -2036,6 +2078,6 @@ input[type="number"] {
   line-height: 25px;
 }
 
-/*.modal-container-close {
+.modal-container-close {
   display: none;
-}*/
+}
