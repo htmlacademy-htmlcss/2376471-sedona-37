@@ -4,8 +4,9 @@
   <head>
     <meta charset="utf-8" />
     <title>HTML Academy: Седона</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="favicon-32x32.png">
     <link rel="stylesheet" href="styles/styles.css" />
-    <link rel="icon" href="favicon-32x32.ico">
   </head>
 
   <body>
@@ -28,17 +29,17 @@
           </ul>
           <ul class="navigation-list navigation-user reset-list">
             <li class="navigation-user-item">
-              <button type="submit" class="navigation-search-button">
-                <span class="visually-hidden">Поиск</span>
+              <button type="button" class="navigation-search-button">
+                <span class="visually-hidden">Поиск.</span>
               </button>
             </li>
             <li class="navigation-user-item">
               <a class="navigation-link navigation-favorite-button reset-link" href="#">
-                <span class="visually-hidden">Избранные</span>
+                <span class="visually-hidden">Избранные.</span>
               </a>
             </li>
             <li class="navigation-item">
-              <button type="submit" class="navigation-button">Хочу сюда!</button>
+              <button type="button" class="navigation-button">Хочу сюда!</button>
             </li>
           </ul>
         </nav>
@@ -46,8 +47,8 @@
       <main class="main-container main-index">
         <section class="hero">
           <h1 class="visually-hidden">Седона</h1>
-          <img class="welcome-img" src="./images/main/welcome.svg" alt="Добро пожаловать в Седону." width="458px"
-            height="359px">
+          <img class="welcome-img" src="./images/main/welcome.svg" alt="Добро пожаловать в Седону." width="458"
+            height="359">
         </section>
         <section class="advantages">
           <div class="advantages-header">
@@ -72,7 +73,7 @@
                   жизнь
                 </p>
               </div>
-              <img class="advantages-image" src="./images/main/sedona.jpg" width="800" min-height="385" alt="Седона." />
+              <img class="advantages-image" src="./images/main/sedona.jpg" width="800" height="385" alt="Седона." />
             </li>
             <li class="advantages-item center">
               <h3 class="advantages-title-after">
@@ -116,7 +117,7 @@
                   разумеется
                 </p>
               </div>
-              <img class="advantages-image" src="./images/main/brige.jpg" width="800" min-height="385"
+              <img class="advantages-image" src="./images/main/brige.jpg" width="800" height="385"
                 alt="Мост дьявола." />
             </li>
           </ul>
@@ -162,20 +163,20 @@
             Укажите предполагаемые даты поездки,<br />
             и мы покажем вам лучшие предложения гостиниц в Седоне
           </p>
-          <button type="submit" class="search-button">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
+          <button type="button" class="search-button">Поиск гостиницы в седоне</button>
         </section>
         <section class="subscribe index-subscribe">
-          <h2 class="subscribe-title index-subscribe-title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h2>
+          <h2 class="subscribe-title index-subscribe-title">Подпишитесь на рассылку</h2>
           <p class="subscribe-description index-subscribe-description">
             Только полезная информация и никакого спама,<br />
             честное бойскаутское!
           </p>
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
             <label class="subscribe-label" for="get-subscribe">
-              <input class="subscribe-input" type=" email" name="get-subscribe" id="get-subscribe"
+              <input class="subscribe-input" type="email" name="get-subscribe" id="get-subscribe"
                 placeholder="Ваш e-mail" />
             </label>
-            <button class="subscribe-button" type="submit">ПОДПИСАТЬСЯ</button>
+            <button class="subscribe-button" type="submit">Подписаться</button>
           </form>
         </section>
       </main>
@@ -183,31 +184,30 @@
         <ul class="footer-social-list reset-list">
           <li class="footer-social-item">
             <a class="footer-social-link footer-social-link-vk" href="https://vk.com/htmlacademy"><span
-                class="visually-hidden">Vkontakte</span>
+                class="visually-hidden">Vkontakte.</span>
             </a>
           </li>
           <li class="footer-social-item">
             <a class="footer-social-link footer-social-link-tg" href="https://t.me/htmlacademy"><span
-                class="visually-hidden">Telegram</span>
+                class="visually-hidden">Telegram.</span>
             </a>
           </li>
           <li class="footer-social-item">
             <a class="footer-social-link footer-social-link-youtube"
-              href="https://www.youtube.com/user/htmlacademyru"><span class="visually-hidden">Youtube</span>
+              href="https://www.youtube.com/user/htmlacademyru"><span class="visually-hidden">Youtube.</span>
             </a>
           </li>
         </ul>
         <a href="tel:88128121212" class="contacts-phone reset-link">+7 (812) 812-12-12</a>
         <a class="htmlacademy-link" href="#"><span class="visually-hidden">Логотип
-            академии</span>
+            академии.</span>
         </a>
       </footer>
-
       <div class="modal-container modal-container-close">
         <section class="modal modal-search">
           <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
           <button type="button" class="modal-close-button">
-            <span class="visually-hidden">Закрыть</span>
+            <span class="visually-hidden">Закрыть.</span>
           </button>
           <form class="search-form" method="post" action="https://echo.htmlacademy.ru/">
             <label class="date-from" for="date-from">Дата заезда:
@@ -226,13 +226,11 @@
                   <span class="modal-form-text text-size">Взрослые:</span>
                 </label>
                 <button class="modal-form-btn button-minus" type="button">
-
-                  <span class="visually-hidden">Уменьшить количество человек</span>
+                  <span class="visually-hidden">Уменьшить количество человек.</span>
                 </button>
                 <input type="number" name="adult" id="adult" class="modal-form-input input-count" value="2">
                 <button class="modal-form-btn button-plus" type="button">
-
-                  <span class="visually-hidden">Увеличить количество человек</span>
+                  <span class="visually-hidden">Увеличить количество человек.</span>
                 </button>
               </div>
               <div class="wrapper-label wrapper-label-child">
@@ -250,11 +248,11 @@
                   </span>
                 </div>
                 <button class="modal-form-btn button-minus" type="button">
-                  <span class="visually-hidden">Уменьшить количество человек</span>
+                  <span class="visually-hidden">Уменьшить количество человек.</span>
                 </button>
                 <input type="number" name="child" id="child" class="modal-form-input input-count" value="2">
                 <button class="modal-form-btn button-plus" type="button">
-                  <span class="visually-hidden">Увеличить количество человек</span>
+                  <span class="visually-hidden">Увеличить количество человек.</span>
                 </button>
               </div>
             </div>
@@ -262,7 +260,6 @@
           </form>
         </section>
       </div>
-
     </div>
   </body>
 

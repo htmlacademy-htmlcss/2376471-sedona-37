@@ -29,9 +29,15 @@ body {
   background-color: #f2f2f2;
 }
 
-main {
+.main-container {
   flex-grow: 1;
   text-align: center;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
 }
 
 .page-container {
@@ -193,7 +199,7 @@ main {
   opacity: 30%;
 }
 
-.navigation-favorite-active::focus {
+.navigation-favorite-active:focus {
   opacity: 30%;
 }
 
@@ -207,7 +213,6 @@ main {
   width: 160px;
   height: 36px;
   margin: -13px 17px 9px 0;
-  margin-left: 0;
   padding: 10px;
   border-radius: 4px;
   text-transform: uppercase;
@@ -249,6 +254,7 @@ main {
   background-size: 1200px 57px, 100% 100%;
   background-repeat: no-repeat;
   padding: 34px 371px 71px 371px;
+  max-width: 100%;
 }
 
 .welcome-img {
@@ -291,9 +297,11 @@ main {
   width: 400px;
   min-height: 385px;
   background-color: #82b3d3;
+  max-width: 100%;
 }
 
 .advantages-image {
+  min-height: 385px;
   object-fit: cover;
 }
 
@@ -406,10 +414,12 @@ main {
 
 .advantages-item {
   background-color: #83b3d31f;
+  max-width: 100%;
 }
 
 .middle {
   background-color: #83b3d333;
+  max-width: 100%;
 }
 
 .center {
@@ -420,6 +430,7 @@ main {
   flex-direction: column;
   width: 400px;
   height: 385px;
+  max-width: 100%;
 }
 
 /*Recommendation*/
@@ -460,6 +471,7 @@ main {
   position: relative;
   padding: 175px 75px 38px;
   box-sizing: border-box;
+  max-width: 100%;
 }
 
 .recommendation-center-item {
@@ -471,6 +483,7 @@ main {
   width: 400px;
   min-height: 385px;
   background-color: #ffffff;
+  max-width: 100%;
 }
 
 .recommendation-item-title {
@@ -586,6 +599,7 @@ main {
   color: #000000;
   padding-top: 131px;
   padding-bottom: 20px;
+  text-transform: uppercase;
 }
 
 .subscribe-discription {
@@ -603,6 +617,7 @@ main {
   background-image: url("../images/main/subscribe.jpg");
   width: 1200px;
   height: 415px;
+  max-width: 100%;
 }
 
 .index-subscribe-title {
@@ -814,6 +829,7 @@ main {
   background-size: cover;
   width: 1200px;
   height: 412px;
+  max-width: 100%;
 }
 
 .catalog-search-title {
@@ -825,6 +841,7 @@ main {
   margin: 0;
   padding-top: 35px;
   margin-right: 566px;
+  text-align: center;
 }
 
 .breadcrumbs-list {
@@ -845,15 +862,15 @@ main {
 }
 
 .breadcrumbs-item:focus {
-  opacity: 1%;
+  opacity: 60%;
 }
 
 .breadcrumbs-item:hover {
-  opacity: 1%;
+  opacity: 60%;
 }
 
 .breadcrumbs-item:active {
-  opacity: 2%;
+  opacity: 60%;
 }
 
 .breadcrumbs-item:last-child::before {
@@ -963,15 +980,15 @@ main {
 }
 
 .control-label:focus {
-  color: #68a2ca;
+  opacity: 60%;
 }
 
 .control-label:hover {
-  color: #68a2ca;
+  opacity: 60%;
 }
 
 .control-label:active {
-  color: #68a2ca;
+  opacity: 60%;
 }
 
 .control-input[type="checkbox"]:checked + .control-mark::before {
@@ -1417,6 +1434,7 @@ input[type="number"] {
   padding: 8px 26px;
   margin: 0;
   text-align: left;
+  max-width: 100%;
 }
 
 .goodscard-link-more:focus {
@@ -1454,6 +1472,37 @@ input[type="number"] {
   margin: 0;
 }
 
+.goodscard-item-button-in-fav {
+  grid-column: 2 / 3;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  width: 140px;
+  height: 36px;
+  background-color: #7db54f;
+  color: #ffffff;
+  border-radius: 4px;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.goodscard-item-button-in-fav:focus {
+  opacity: 60%;
+}
+
+.goodscard-item-button-in-fav:hover {
+  opacity: 60%;
+}
+
+.goodscard-item-button-in-fav:active {
+  opacity: 60%;
+}
+
 .goodscard-item-button:focus {
   background-color: rgba(104, 162, 202, 1);
 }
@@ -1476,11 +1525,22 @@ input[type="number"] {
   line-height: 1px;
 }
 
+.goodscard-link:focus {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.goodscard-link:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.goodscard-link:active {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
 .rating {
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 16px;
-  line-height: 20px;
   background-color: #f2f2f2;
   color: #333333;
   width: 140px;
@@ -1489,6 +1549,7 @@ input[type="number"] {
   padding: 0;
   margin: 0;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .goodscard-stars {
@@ -1788,10 +1849,6 @@ input[type="number"] {
   font-size: 20px;
 }
 
-.date-from-form:focus {
-  border: 3px solid rgba(131, 179, 211, 1);
-}
-
 .date-from-form:hover {
   background-color: rgba(230, 230, 230, 1);
 }
@@ -1810,10 +1867,6 @@ input[type="number"] {
   border: none;
   border-radius: 4px;
   background-color: #f2f2f2;
-}
-
-.date-to-form:focus {
-  border: 3px solid rgba(131, 179, 211, 1);
 }
 
 .date-to-form:hover {
@@ -2085,6 +2138,6 @@ input[type="number"] {
   line-height: 25px;
 }
 
-.modal-container-close {
+/*.modal-container-close {
   display: none;
-}
+}*/
