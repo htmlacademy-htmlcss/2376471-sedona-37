@@ -179,7 +179,7 @@ img {
   opacity: 30%;
 }
 
-.navigation-search-active::focus {
+.navigation-search-active:focus {
   opacity: 30%;
 }
 
@@ -301,8 +301,9 @@ img {
 }
 
 .advantages-image {
-  min-height: 385px;
+  /*min-height: 385px;
   object-fit: cover;
+  */
 }
 
 .advantages-wide-title {
