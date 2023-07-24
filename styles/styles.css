@@ -301,9 +301,9 @@ img {
 }
 
 .advantages-image {
-  /*min-height: 385px;
+  max-width: 800px;
+  min-height: 385px;
   object-fit: cover;
-  */
 }
 
 .advantages-wide-title {
